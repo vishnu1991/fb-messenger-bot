@@ -41,7 +41,6 @@ def webhook():
 
                     send_message(sender_id, "got it, thanks!")
 
-                
                 if messaging_event.get("delivery"):  # delivery confirmation
                     pass
 
@@ -52,8 +51,6 @@ def webhook():
                     pass
 
     return "ok", 200
-
-
 
 
 def send_message(recipient_id, message_text):
